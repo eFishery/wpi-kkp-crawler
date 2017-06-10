@@ -1,0 +1,70 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "import"
+    ],
+    "rules": {
+      "arrow-body-style": ["error", "always"],
+      "no-underscore-dangle": 0,
+      "no-unused-vars": [1, {"args": "all", "vars": "all", "varsIgnorePattern": "^_" }],
+      "semi": 2,
+      "curly": [
+        2,
+        "all"
+      ],
+      "no-param-reassign": [2, {
+        "props": false
+      }],
+      "operator-linebreak": [
+        2,
+        "after"
+      ],
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ],
+      "comma-dangle": ["error", {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }],
+      "no-multi-str": 2,
+      "no-mixed-spaces-and-tabs": 2,
+      "no-trailing-spaces": 2,
+      "space-unary-ops": [
+        2,
+        {
+          "nonwords": false,
+          "overrides": {}
+        }
+      ],
+      "keyword-spacing": [
+        2,
+        {}
+      ],
+      "space-infix-ops": 2,
+      "space-before-blocks": [
+        2,
+        "always"
+      ],
+      "eol-last": 2,
+      "space-in-parens": [
+        2,
+        "never"
+      ],
+      "no-multiple-empty-lines": 2,
+      "max-len": [
+        2,
+        100,
+        2,
+        {
+          "ignoreRegExpLiterals": true,
+          "ignoreStrings": true
+        }
+      ]
+    }
+}

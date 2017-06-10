@@ -1,0 +1,33 @@
+{
+  "name": "wpi-kkp-crawler",
+  "version": "1.0.0",
+  "description": "info harga ikan crawler",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "npm run eslint && git add .",
+    "eslint": "./node_modules/.bin/eslint --fix libs/*.js tests/*.js example/*.js *.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.3.0",
+    "husky": "^0.13.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/efishery/wpi-kkp-crawler.git"
+  },
+  "keywords": [
+    "wpi",
+    "kkp",
+    "ikan",
+    "harga"
+  ],
+  "author": "ans4175",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/efishery/wpi-kkp-crawler#readme",
+  "dependencies": {
+    "axios": "^0.16.2"
+  }
+}
