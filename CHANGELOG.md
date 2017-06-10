@@ -1,3 +1,9 @@
+#### 1.0.3 (2017-6-10)
+
+##### Chores
+
+* **readme-travis:** fix travis ([a5296b57](https://github.com/eFishery/wpi-kkp-crawler/commit/a5296b571c263f36c110a26208b781cdb36a3830))
+
 #### 1.0.2 (2017-6-10)
 
 ##### Chores
