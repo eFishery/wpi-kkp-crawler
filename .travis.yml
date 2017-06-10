@@ -3,12 +3,9 @@ node_js:
 - '6'
 cache:
   directories:
-    - "node_modules"
-# deploy:
-#   provider: npm
-#   email: ans4175@gmail.com
-#   api_key:
-#     secure: DI/hlZtjLT8AGkrwwmzqLjsDCOelISFE4CMR+ZckQB7AnFdSaT4EcRRKIimdrdwWn4lmzeYFu4pkfLRKg76VHI2da3WMouRqWA7isC29bzdSifhEgkvNEK2QpqWN1YPrwSLxVwSCdhs1as9uGbjn25J/9qdrhP+8cL/REuBSpmaakY7Yw5W6h2i+myqBZHxVCfcInQi4Hp3lkS2gaL1A+T28FdZF6DWzKU+qI5NNudRnSWk0N7a7EmRk89vYt8jyt/TnsY8hf3m/eD6sk+Aer7QLzP2E+CEC0bCD7f1ycQc4wa1bYHiwag1bmrP0Pg05PnNAIWqLW04+5ieBXEHhadIevLDzhQ/g5D4GtvbjycNvCQqV6xIvZiUmsVBPtxeud01TYjfsXU9zWesXq3D9nfzbUGuc7NrSIqpxM48EWp3qswwtXPRT0HFx9QzUwyMdWPbsGH7qXx2bGrvbaPx8f5akMGGIzkzZQ604HUNOGkfGgqoKzTwCod3p6+lTuCIuW0TO6PqfO0Rg8wa8xmA6djB0RUEadIG72N7maW6KYjXUlS4QqidLdhbGbmfku3IgIXDp/DYst3HUbfPIt0OGOz/Phl7IYk9sOzGwacWIZDmFVAErQdmFKH4N6gqyXWfsymrQL1soMsMjkY0oZIfwU+b04Om/jPUs5gGTJjF427k=
-#   on:
-#     tags: true
-#     repo: begundal-ug/waze-traffic
+  - node_modules
+deploy:
+  provider: npm
+  email: ans4175@gmail.com
+  api_key:
+    secure: LXc97vMNrRTixzGt0LZmLQtthSaSyGxuq0x1jaQLnN9jXLH7PkxKB6PU+muBKzyfklReEck9RBkC/42RaJeyFzjMjmLrD7McTElJNyzOEeAx4aRz1NfEYzhJM9Y1xxJNgrufG/xfTPyCq4PhSNHpT/X8E3grU/uj4ZtdHxcDfykjt21u2Nk33+Fh1TeWzcTzfrDix371T68gzlwg0LHyVeMVXLH4GJmBKFfrccR+/jwIDfVoydnBviDUAsPJOQT39Cgxlqk0y6oiOTAFRu04o6awwFlZDvd4/xfUvsztBuH0kSOcvDMxlbtYBJzLic13lBNokRcLvCmgTRYwnF/T97lIVQoIfpUVWfCn245Ik2Tj3N/Hm4h44DoRYPtgrty5PpSDH+E4MF83G1UD3m6TeN9J4yZD2KXxceAlaJBG4OagB2gE5XApJ0aoBdUx+ZJCy3qh4GqeUE7zEwAVNXJ8aETzEp19VLI79E/I5K9V27nOYYmepMI4cKiEvdRQiG/cJJCpxp4S5/vmDLeKzUYIeF/sxt80xLxjuvMcVHmWEPP8KcVoE9W+cRzPolrOkTweMLmjNnP4WJ15+QXLcnTnblxPrlZD/uiv7MloypNXmTfesXp1pR40TXMpUlu7kI23tuglUAjWfDnipeEFe0xAJaeWPvbzcIAJ2y6b+xSWeTk=

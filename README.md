@@ -33,9 +33,9 @@ wpiCrawler.fetch({
 
 ### API
 
-####**fetch([params])**
+#### **fetch([params])**
 
-#####**params**
+##### **params**
 
 **start** (required)
 
@@ -63,5 +63,3 @@ see [CHANGELOG.md](CHANGELOG.md)
 
 Copyright (c) 2017 Ahmad Anshorimuslim
 Licensed under the MIT license.
-
-[![AirBNB - JavaScript Style Guide](https://avatars2.githubusercontent.com/u/698437?v=3&s=400)](https://github.com/airbnb/javascript)
