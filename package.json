@@ -1,6 +1,6 @@
 {
   "name": "wpi-kkp-crawler",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Fisheries price crawler for wpi.kkp.go.id",
   "main": "index.js",
   "contributors": [
