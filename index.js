@@ -1,5 +1,7 @@
 const axios = require('axios');
 
+const parseDate = require('./libs/parseDate');
+
 const wpiURL = 'http://wpi.kkp.go.id/info_harga_ikan/server.php';
 const minCount = 1000;
 const groups = ['tgl', 'prov', 'kab', 'komoditas'];
@@ -21,18 +23,6 @@ function hitURL(tgl1, tgl2, length) {
     })
     .catch(reject);
   });
-}
-
-function parseDate(strDate) {
-  const objDate = new Date(strDate);
-  return {
-    toString: () => {
-      return `${objDate.getFullYear()}-${objDate.getMonth() + 1}-${objDate.getDate()}`;
-    },
-    toUnix: () => {
-      return objDate.getTime();
-    },
-  };
 }
 
 function fetch(opt) {

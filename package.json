@@ -1,22 +1,37 @@
 {
   "name": "wpi-kkp-crawler",
   "version": "1.0.0",
-  "description": "info harga ikan crawler",
+  "description": "Fisheries price crawler for wpi.kkp.go.id",
   "main": "index.js",
+  "contributors": [
+    {
+      "name": "Ahmad Anshorimuslim",
+      "email": "ans4175@gmail.com"
+    }
+  ],
   "scripts": {
-    "precommit": "npm run eslint && git add .",
-    "eslint": "./node_modules/.bin/eslint --fix libs/*.js tests/*.js *.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "precommit": "npm test && git add .",
+    "test": "jest && npm run eslint",
+    "eslint": "./node_modules/.bin/eslint --fix libs/*.js *.js",
+    "release:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major && git push origin && git push origin --tags",
+    "release:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor && git push origin && git push origin --tags",
+    "release:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch && git push origin && git push origin --tags"
+  },
+  "jest": {
+    "roots": [
+      "tests"
+    ]
   },
   "devDependencies": {
     "eslint": "^3.19.0",
     "eslint-config-airbnb-base": "^11.2.0",
     "eslint-plugin-import": "^2.3.0",
-    "husky": "^0.13.4"
+    "husky": "^0.13.4",
+    "jest": "^20.0.4"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/efishery/wpi-kkp-crawler.git"
+    "url": "git+ssh://git@github.com:eFishery/wpi-kkp-crawler.git"
   },
   "keywords": [
     "wpi",
@@ -25,8 +40,8 @@
     "harga"
   ],
   "author": "ans4175",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/efishery/wpi-kkp-crawler#readme",
+  "license": "MIT",
+  "homepage": "https://github.com/eFishery/wpi-kkp-crawler",
   "dependencies": {
     "axios": "^0.16.2"
   }
