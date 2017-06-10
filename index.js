@@ -4,7 +4,7 @@ const wpiURL = 'http://wpi.kkp.go.id/info_harga_ikan/server.php';
 const minCount = 1000;
 const groups = ['tgl', 'prov', 'kab', 'komoditas'];
 
-function hitURL(tgl1, tgl2, length = minCount) {
+function hitURL(tgl1, tgl2, length) {
   return new Promise((resolve, reject) => {
     axios.get(wpiURL, {
       params: {
