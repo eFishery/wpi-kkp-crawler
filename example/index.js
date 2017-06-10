@@ -1,9 +1,9 @@
 const wpiCrawler = require('../');
 
 wpiCrawler.fetch({
-  start: '2017-02-01',
-  end: '2017-02-03',
-  groupBy: 'tgl',
+  start: '2016-02-01',
+  end: '2016-02-03',
+  groupBy: 'komoditas',
 })
 .then((data) => {
   console.log(data);
