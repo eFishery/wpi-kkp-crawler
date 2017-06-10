@@ -1,5 +1,7 @@
 # <center>wpi-kkp-crawler</center>
 
+<center>[![Build Status](https://travis-ci.org/eFishery/wpi-kkp-crawler.svg?branch=master)](https://travis-ci.org/eFishery/wpi-kkp-crawler) [![npm version](https://badge.fury.io/js/wpi-kkp-crawler.svg)](https://badge.fury.io/js/wpi-kkp-crawler)</center>
+
 This is an unofficial module to fetch fisheries prices from [KKP](http://wpi.kkp.go.id), which includes grouping for dates, locations and commodities.
 
 This was built with ES2015 in mind, so you need to use nodejs 6 minimum, or use babel with `babel-preset-es2015` preset.
